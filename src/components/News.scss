@@ -1,0 +1,36 @@
+.news__elem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Montserrat;
+    position: relative;
+
+    .heart {
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+
+    .text {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+      p:nth-child(1) {
+        width: 257px;
+        color: #031412;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 96.4%;
+      }
+
+      p:nth-child(2) {
+        color: #031412;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 96.4%;
+      }
+    }
+  }

@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Qanelas';
+    src: local("Qanelas"),
+        url("../../lighthaus-cufonfonts/Lighthaus.otf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+    margin: 0 auto;
+    width: 160vh;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.top {
+    background-image: url("../../BG.png");
+    height: 1000px;
+    max-width: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .left-arr {
+        position: absolute;
+        top: 400px;
+    }
+
+    .right-arr {
+        position: absolute;
+        top: 400px;
+        right: 0;
+    }
+
+    header {
+        font-family: Montserrat;
+        max-width: 100%;
+        width: 100%;
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+
+            .left-center {
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 100px;
+
+                .center {
+                    padding: 40px 0;
+
+                    nav {
+                        display: flex;
+                        gap: 70px;
+
+                        a {
+                            width: 100%;
+                            color: #FFF;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 0.964;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+
+
+
+
+                        a:focus {
+                            background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                            background-clip: text;
+                            font-weight: 600;
+                            font-size: 16px;
+                            position: relative;
+                        }
+
+
+                        a:focus::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: -2px;
+                            width: 100%;
+                            height: 1px;
+                            background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
+                        }
+                    }
+                }
+
+
+                .left {
+                    padding: 40px 0;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                gap: 20px;
+                margin: 0;
+                padding: 0;
+                padding-left: 20px;
+
+                img {
+
+                    transition: all .5s ease;
+                    cursor: pointer;
+                }
+
+                img:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .hit {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        h1 {
+            font-family: Lighthaus;
+            width: 737px;
+            color: #FFF;
+            font-size: 100px;
+            line-height: 0.749;
+        }
+
+        h2 {
+            width: 533px;
+            color: #FFF;
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 0.964;
+        }
+
+        .text {
+            display: flex;
+            font-family: Montserrat;
+            gap: 50px;
+
+            span:nth-child(1) {
+                color: #FFF;
+
+                font-size: 30px;
+                line-height: 0.964;
+            }
+
+            span:nth-child(2) {
+                color: #FFF;
+
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 0.964;
+            }
+        }
+
+        .line {
+            width: 650px;
+            height: 1px;
+            max-width: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        }
+
+        button {
+            width: 327px;
+            height: 50px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            color: #FFF;
+            font-weight: 800;
+            border-style: none;
+            font-size: 18px;
+            line-height: 0.964;
+            transition: all .5s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            border-radius: 20px;
+        }
+
+    }
+}
+
+body {
+
+    footer {
+        position: relative;
+        background: radial-gradient(circle, rgba(0, 64, 48, 1) 0%, rgba(0, 48, 48, 1) 100%);
+        .box {
+            z-index: 11;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            font-family: Montserrat;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: last baseline;
+                gap: 20px;
+
+                p:nth-child(2) {
+                    width: 214px;
+                    color: #ADADAD;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 134.4%;
+                }
+
+                a {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 134.4%;
+                    text-decoration-line: underline;
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: right;
+                gap: 80px;
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: last baseline;
+
+                    label {
+                        color: #FFF;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 96.4%;
+                    }
+
+                    a {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 134.4%;
+                        text-decoration: none;
+                        transition: all .5s ease;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 134.4%;
+                    }
+                }
+            }
+        }
+
+        .up {
+            position: absolute;
+            right: 100px;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,504 @@
+@font-face {
+  font-family: 'Qanelas';
+  src: local("Qanelas"),
+    url("../lighthaus-cufonfonts/Lighthaus.otf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  font-family: Poppins;
+  position: relative;
+  width: 100%;
+
+  .main {
+    max-width: 100%;
+    width: 100%;
+
+    .container {
+      margin: 0 auto;
+      width: 160vh;
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    .our-products {
+      font-family: Montserrat;
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+
+        h1 {
+          color: #031412;
+          text-align: center;
+          font-family: Lighthaus;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 74.9%;
+          padding-bottom: 20px;
+        }
+      }
+
+      &__elems {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        max-width: 100%;
+        gap: 10px;
+      }
+    }
+
+
+    .best-sales {
+      margin: 50px 0;
+      max-width: 100%;
+      background-color: rgb(246, 246, 245);
+      position: relative;
+
+      .left {
+        position: absolute;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      &__box {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          color: #031412;
+          text-align: center;
+          font-family: Lighthaus;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 74.9%;
+          padding: 50px 0;
+        }
+
+        button {
+          width: 327px;
+          height: 50px;
+          flex-shrink: 0;
+          background: linear-gradient(92deg, #5E3928 20.13%, #E4A16F 92.93%);
+          color: #FFF;
+          text-align: center;
+          transition: all .5s ease;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 96.4%;
+          border-style: none;
+          margin: 30px 0 50px;
+        }
+
+
+        button:hover {
+          transform: scale(1.05);
+          border-radius: 20px;
+        }
+      }
+
+      &__elems {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+
+    .news {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+
+      .left {
+        position: absolute;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      &__box {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0 0;
+        gap: 50px;
+
+        h1 {
+          color: #031412;
+          text-align: center;
+          font-family: Lighthaus;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 74.9%;
+        }
+      }
+
+
+      button {
+        width: 327px;
+        height: 50px;
+        flex-shrink: 0;
+        background: linear-gradient(92deg, #5E3928 20.13%, #E4A16F 92.93%);
+        color: #FFF;
+        text-align: center;
+        transition: all .5s ease;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 96.4%;
+        border-style: none;
+
+      }
+
+
+      button:hover {
+        transform: scale(1.05);
+        border-radius: 20px;
+      }
+
+      &__elems {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        align-items: center;
+      }
+
+
+      &__elem-sale {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 20px;
+        font-family: Montserrat;
+
+        .heart {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+        }
+
+        .sale {
+          position: absolute;
+          left: 0;
+          top: 25px;
+        }
+
+        .text {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: last baseline;
+
+          .title {
+            width: 257px;
+            color: #031412;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 96.4%;
+          }
+
+          .prices {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            p:nth-child(1) {
+              color: #031412;
+              text-decoration: line-through;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 96.4%;
+              opacity: 0.3;
+            }
+
+            p:nth-child(2) {
+              color: #9B0000;
+
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 96.4%;
+            }
+          }
+        }
+      }
+
+    }
+
+    .bg {
+      background-size: 100%;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-image: url("../bg3.png");
+      height: 690px;
+    }
+
+    .we-rec {
+      margin: 20px 0;
+      position: relative;
+      max-width: 100%;
+
+      .left {
+        position: absolute;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+    }
+
+    .rec {
+      position: relative;
+      background-color: rgb(247, 247, 246);
+      max-width: 100%;
+      padding: 20px;
+
+      .left {
+        position: absolute;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          color: #031412;
+          text-align: center;
+          font-family: Lighthaus;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          padding: 20px 0;
+          line-height: 74.9%;
+        }
+      }
+
+      &__elems {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        padding-bottom: 10px;
+      }
+
+
+      button {
+        width: 327px;
+        height: 50px;
+        flex-shrink: 0;
+        background: linear-gradient(92deg, #5E3928 20.13%, #E4A16F 92.93%);
+        color: #FFF;
+        text-align: center;
+        transition: all .5s ease;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 96.4%;
+        border-style: none;
+
+      }
+
+
+      button:hover {
+        transform: scale(1.05);
+        border-radius: 20px;
+      }
+
+    }
+
+    .think-us {
+      position: relative;
+      max-width: 100%;
+      padding: 20px;
+      font-family: Montserrat;
+
+      .left {
+        position: absolute;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #fff;
+        z-index: 11;
+      }
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0;
+
+        h1 {
+          color: #031412;
+          text-align: center;
+          font-family: Lighthaus;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          padding: 20px 0;
+          line-height: 74.9%;
+        }
+      }
+
+      &__elems {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        padding-bottom: 10px;
+      }
+
+      &__elem {
+        display: flex;
+        padding: 20px;
+        position: relative;
+        flex-direction: column;
+        align-items: last baseline;
+        gap: 20px;
+        width: 436px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        img:nth-child(2) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding-bottom: 10px;
+        }
+
+        p:nth-child(3) {
+          color: #031412;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 96.4%;
+        }
+
+        p:nth-child(4) {
+          color: #031412;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 134.4%;
+        }
+
+        p:nth-child(5) {
+          color: #031412;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 134.4%;
+        }
+      }
+    }
+
+    .why-us {
+      background-color: rgb(242, 243, 242);
+      h1 {
+        padding: 60px 0 30px;
+        color: #031412;
+        text-align: center;
+        font-family: Lighthaus;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 74.9%;
+      }
+      
+      &__box {
+        max-width: 100%;
+        width: 100%;
+        font-family: Montserrat;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 40px 0 60px;
+      }
+
+      
+    }
+  }
+}
